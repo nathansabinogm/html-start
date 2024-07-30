@@ -1,6 +1,6 @@
 ### Projeto Tela de Login
 
-* html
+* html5
 * css 3
 * javascript
 * Bootstrap 5.3
