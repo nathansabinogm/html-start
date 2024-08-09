@@ -8,6 +8,10 @@ function validar(){
         alert("Preencha o campo email!");
         return false;
     }
+    if(email.includes('@'){
+        alert("Esse e-mail está inválido!");
+        return false;
+    }
     if(senha == ""){
         alert("Preencha o campo senha!");
         return false;
