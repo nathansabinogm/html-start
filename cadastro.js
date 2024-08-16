@@ -39,3 +39,9 @@ document.getElementById("cadastro")
     e.preventDefault()
     validar();
 })
+
+document.getElementById("fechar")
+    .addEventListener("click",  (e) => {
+    e.preventDefault()
+    validar();
+})
