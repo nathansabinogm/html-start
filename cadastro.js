@@ -1,4 +1,5 @@
 function validar(){
+    alert('validando')
     /** pega os dados campos */ 
     nome = document.getElementById("nome").value;
     email = document.getElementById("email").value;
