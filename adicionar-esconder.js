@@ -14,4 +14,8 @@
                 class_mostrar.classList.add('esconder')
             }, 3000)
         }
+
+       function hello(){
+        alert('Hello')
+       }
     </script>
