@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cadastro</title>
+    <title>cadastro - Nathan</title>
 </head>
 <body>
+    <div class="tema">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+    </div>
     <form>
         <h1>Faça seu cadastro agora</h1>
         <input type="file" accept="jpeg, png" placeholder="escolha sua foto">
@@ -13,7 +18,7 @@
         <input type="text" placeholder="email">
         <input type="password" placeholder="senha">
         <input type="password" placeholder="confirmar senha">
-        <button>Cadastrar</button>
+        <button type="button" id="cadastrar">Cadastrar</button>
     </form>
 
     <style>
@@ -25,30 +30,36 @@
         body{
             color: #fff;
             height: 100vh;
-            background-color: #000;
+            background-color: #000; /* trocar aqui */
 
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
         }
         form{
             width: 350px;
-            height: 450px;
+            height: 390px;
             padding: 20px;
-            background-color: #7777;
+            background-color: #7777; /* trocar aqui */
             border-radius: 10px;
 
             gap: 10px;
             display: flex;
             flex-direction: column;
         }
-        h1{ text-align: center;}
+        h1{ 
+            text-align: center;
+            font-size: 22px;
+        }
         input[type="file"]{
-            background-color: #1c1c1c;
+            background-color: #1c1c1c; /* trocar aqui */
         }
         input{
+            border: none;
             padding: 10px;
             border-radius: 15px;
+            background-color: #1c1c1c; /* trocar aqui */
         }
         button{
             margin-top: 20px;
@@ -57,8 +68,32 @@
             color: #fff;
             cursor: pointer;
             border-radius: 15px;
-            background-color: #1c1c1c;
+            background-color: #1c1c1c; 
+        }
+        .tema button{
+            height: 50px;
+            width: 50px;
+            margin-bottom: 10px;
+            border-radius: 50%;
+
+            opacity: .6;
+            cursor: pointer;
+            transition: .9s;
+        }
+        .tema button:hover{
+            opacity: 1;
+            font-size: 1.05em;
         }
     </style>
+
+    <script>
+        var btn = document.querySelector('#cadastrar')
+
+        btn.onclick = (e) => {
+            e.preventDefault()
+            alert('Seja bem vindo')
+            window.document.location.href = "youVideo.html"
+        }
+    </script>
 </body>
 </html>
